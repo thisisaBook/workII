@@ -1,0 +1,696 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap");
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans TC", Noto Sans, sans-serif;
+  background: #ffffff;
+  line-height: 1.5;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 48px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+img {
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.titleline img {
+  padding-left: 16px;
+  padding-right: 16px;
+  vertical-align: middle;
+}
+
+header {
+  max-width: 1296px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 32px 0px;
+  line-height: 1;
+  justify-content:space-between;
+  
+}
+
+
+.logo{
+  display:block;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+header .material-symbols-outlined {
+  cursor: pointer;
+  font-size: 30px;
+  display: none;
+}
+
+header .burgar_click {
+  display: none;
+}
+
+nav .menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+
+}
+
+nav .menu li {
+  position: relative;
+}
+
+nav .menu a {
+  display: flex;
+  align-items: center;
+  line-height: 24px;
+  height: 32px;
+  padding: 4px 8px 4px 8px;
+  color: #000000;
+}
+
+.menu a::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  /*   左下 */
+}
+
+.menu a::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  /*   右上 */
+}
+
+.menu li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-left: 1px solid transparent;
+  border-top: 1px solid transparent;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  /*   左下 */
+}
+.menu li::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 1px solid transparent;
+  border-top: 1px solid transparent;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  /*   右上 */
+}
+
+a:hover::before,
+a:hover::after,
+li:hover::before,
+li:hover::after {
+  border-color: #919191;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-left {
+  padding-left: 6%;
+}
+
+.banner-left h2 {
+  padding-bottom: 24px;
+}
+
+.banner-left p {
+  padding-bottom: 16px;
+  color: #5b5b5b;
+}
+
+.english {
+  color: #c1c1c1;
+  line-height: 24px;
+}
+
+span.mark {
+  background: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/mark.png?raw=true);
+  background-repeat: no-repeat;
+  background-position: bottom 1px right 0px;
+  padding-right: 16px;
+}
+
+.social {
+  display: flex;
+  margin-top: 60px;
+  gap: 16px;
+}
+
+.banner-right {
+  width: 80;
+  height: auto;
+}
+
+.banner-right img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+.content h3 {
+  text-align: center;
+  color: #000000;
+}
+
+.work1 {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work1-bg.png?raw=true");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center center;
+}
+
+.work1-con {
+  max-width: 1296px;
+  display: flex;
+  margin: 0 auto;
+  gap: 55px;
+}
+.work1-left {
+  max-width: 714px;
+  padding-top: 80px;
+}
+
+.work1-right {
+  margin-top: 200px;
+  margin-bottom: 200px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 40px 80px;
+  border-radius: 24px;
+}
+
+.work1-right h4 {
+  font-weight: 700;
+}
+
+.tag {
+  display:inline-block;
+}
+.tag ul {
+  display: flex;
+  gap: 16px;
+   margin-top: 24px;
+  text-align:center;
+}
+
+.tag li {
+  background: #ffffff;
+  color: #3b3b3b;
+  padding: 4px 12px;
+  border-radius: 10px;
+}
+
+hr {
+  margin-top: 40px;
+  border: 1px solid #ffffff;
+}
+
+.button {
+  margin-top: 40px;
+  background: #000000;
+  padding: 16px 32px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.button span {
+  vertical-align: middle;
+}
+
+.work2 {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work2-lg.png?raw=true");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center center;
+  margin: 0 auto;
+}
+
+.work2-con {
+  max-width: 1296px;
+  display: flex;
+
+  gap: 55px;
+}
+
+.work3 {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-work3-bg.png?raw=true");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-position: center center;
+}
+
+.service {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/homepage-services-bg.png?raw=true");
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+}
+h3 {
+  color: #3b3b3b;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  gap: 16px;
+}
+
+.service-con {
+  max-width: 1296px;
+  gap: 24px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.item {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/service-item-bg.png?raw=true")
+    no-repeat;
+  background-position: center center;
+  width: 305px;
+  height: 305px;
+  padding: 20px 30px;
+  border-radius: 16px;
+  text-align: center;
+  align-content: center;
+}
+
+.info {
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding-bottom: 120px;
+  padding-top: 80px;
+}
+
+.info h4 {
+  color: #3b3b3b;
+}
+
+.card-all {
+  max-width: 1296px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.card {
+  max-width: 32%;
+}
+
+.card img {
+  width: 100%;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
+}
+
+.information {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.tag-a {
+  background: #f1f1f1;
+  color: #3b3b3b;
+  padding: 4px 12px;
+  border-radius: 10px;
+}
+
+.dot {
+  margin-top: 40px;
+  margin-bottom: 120px;
+}
+
+.dot ul {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.dot li {
+  width: 12px;
+  height: 12px;
+  border-radius: 16px;
+  background: #e9e9e9;
+}
+
+footer {
+  background: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2024%20web-camp/footer-bg-lg.png?raw=true");
+  background-size: cover;
+  background-position: center center;
+}
+
+.footer-wrap {
+  max-width: 1296px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.footer-right {
+  display: grid;
+  gap: 24px;
+  padding: 80px 0px;
+}
+
+.footer-button {
+  width: 306px;
+  background: #000000;
+  padding: 16px 32px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+}
+
+.white {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #c1c1c1;
+  font-weight: 400;
+}
+
+.footer-left {
+  padding: 80px 0px;
+  font-size: 20px;
+}
+
+.footer-left p {
+  margin-top: 24px;
+}
+
+.mail {
+  color: #919191;
+}
+
+@media screen and (max-width: 1920px) {
+  .work1-sm {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  h2 {
+    font-size: 32px;
+  }
+  
+  header {
+    max-width: 100%;
+    display:flex;
+    padding: 8px 12px;
+    border-color: #f1f1f1;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  
+  .logo{
+  }
+  
+
+  .content {
+    width: 100%;
+    display: block;
+  }
+
+  .banner-left {
+    text-align: center;
+    padding: 53.5px;
+  }
+
+  .social {
+    justify-content: center;
+    margin-top: 24px;
+    gap: 18px;
+  }
+
+  .banner,
+  .work1-con,
+  .work2-con,
+  .work1-left,
+  .work1-right,
+  .service-con,
+  .card-all,
+  .footer-wrap {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  .work1-left,
+  .work1-right {
+    padding: 0px 24px;
+    color: #000000;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .work1,
+  .work2,
+  .work3 {
+    background: none;
+    margin: 0 auto;
+  }
+
+  .work1-sm {
+    display: block;
+  }
+
+  .banner-right,
+  .work1-left {
+    display: none;
+  }
+
+  .work1-right {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .card {
+    max-width: 350px;
+    margin-bottom: 24px;
+  }
+
+  .tag li {
+    background: #f1f1f1;
+    padding: 4px 12px;
+  }
+
+  .tag {
+    margin-bottom: 20px;
+    white-space:nowrap;
+  }
+
+  .tag ul {
+    gap: 10px;
+  }
+
+  .button {
+    color: #ffffff;
+    padding: 8px 16px;
+    display: inline-block;
+    margin-bottom: 48px;
+  }
+
+  hr {
+    display: none;
+  }
+
+  .service-con {
+    text-align: center;
+  }
+
+  .item {
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+
+  .info {
+    padding-bottom: 40px;
+  }
+
+  .footer-wrap {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .footer-left {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .footer-right {
+    display: inline-block;
+  }
+
+  .footer-button {
+    margin-bottom: 24px;
+  }
+  h3 {
+    font-size: 20px;
+    padding-bottom: 0px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .titleline img {
+    width: 30%;
+    height: auto;
+  }
+  
+  
+/*   不知道為什麼能夠運作的漢堡 */
+
+  header .material-symbols-outlined {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  header .burgar_click:checked ~ label::before {
+    content: "close";
+  }
+
+  header .burgar_click:not(:checked) ~ label::before {
+    content: "menu";
+  }
+
+  header .material-symbols-outlined {
+    display: block;
+  }
+
+ ul.menu {
+    display: none;
+  }
+
+
+  .burgar_click:checked ~ .menu {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
