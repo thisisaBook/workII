@@ -86,8 +86,7 @@ h5 {
   font-weight: 700;
 }
 
-img {
-}
+
 
 a {
   color: black;
@@ -135,6 +134,8 @@ header .burgar_click {
   display: none;
 }
 
+
+
 nav .menu {
   display: flex;
   justify-content: space-around;
@@ -142,11 +143,11 @@ nav .menu {
 
 }
 
-nav .menu li {
+nav .menu  li {
   position: relative;
 }
 
-nav .menu a {
+nav .menu   a {
   display: flex;
   align-items: center;
   line-height: 24px;
@@ -502,13 +503,14 @@ footer {
   color: #919191;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen  { 
   .work1-sm {
     display: none;
   }
+  
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width:768px) { 
   h2 {
     font-size: 32px;
   }
@@ -523,8 +525,6 @@ footer {
     position: relative;
   }
   
-  .logo{
-  }
   
 
   .content {
@@ -599,7 +599,6 @@ footer {
 
   .tag {
     margin-bottom: 20px;
-    white-space:nowrap;
   }
 
   .tag ul {
@@ -662,35 +661,44 @@ footer {
   
 /*   不知道為什麼能夠運作的漢堡 */
 
-  header .material-symbols-outlined {
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
-  header .burgar_click:checked ~ label::before {
-    content: "close";
-  }
+nav{
+  width:100%;
+}
 
-  header .burgar_click:not(:checked) ~ label::before {
-    content: "menu";
-  }
+.logo2{
+  display: block;
+}
 
-  header .material-symbols-outlined {
-    display: block;
-  }
+header .material-symbols-outlined {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
- ul.menu {
-    display: none;
-  }
+header .burgar_click:checked ~ label::before {
+  content: "close";
+}
+
+header .burgar_click:not(:checked) ~ label::before {
+  content: "menu";
+}
+
+header .material-symbols-outlined {
+  display: block;
+}
+
+ul.menu {
+  display: none;
+}
 
 
-  .burgar_click:checked ~ .menu {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
+.burgar_click:checked ~ .menu {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
 
-  }
+}
 }
